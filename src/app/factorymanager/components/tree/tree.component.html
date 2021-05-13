@@ -62,10 +62,10 @@
   <mat-drawer-content>
     <div class="row">
       <div class="col-sm-8">
-        <label>Name Filter : &nbsp;</label>
-        <input [(ngModel)]='Name'>
-        <button type="button" (click)="NameFilter()"><mat-icon>search</mat-icon> Search</button>
-        <button type="button" (click)="NameFilterClear()"><mat-icon>refresh</mat-icon> Clear</button>
+        <label>Product Category : &nbsp;</label>
+        <input [(ngModel)]='Category'>
+        <button type="button" (click)="CategoryFilter()"><mat-icon>search</mat-icon> Search</button>
+        <button type="button" (click)="CategoryFilterClear()"><mat-icon>refresh</mat-icon> Clear</button>
 
         <label>Sort By : &nbsp;</label>
         <select style="font-size: 20px;" [(ngModel)]='Sort'>
@@ -83,7 +83,7 @@
 
     <hr>
     <div class="row">
-      <div *ngFor="let newProduct of newProducts|filter:nameFilter:'Name'|sort:[Sort, sortDirection]" class="col-sm-4">
+      <div *ngFor="let newProduct of newProducts|filter:categoryFilter:'Category'|sort:[Sort, sortDirection]" class="col-sm-4">
         <div class="shadow-lg p-3">
           <app-newproducts [newProduct]="newProduct"></app-newproducts>
         </div>

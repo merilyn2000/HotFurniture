@@ -177,8 +177,8 @@ export class TreeComponent {
 
   dataSource: MatTreeFlatDataSource<TodoItemNode, TodoItemFlatNode>;
 
-  Name = '';
-  nameFilter = '';
+  Category = '';
+  categoryFilter = '';
   Sort = '';
   sortDirection = 'asc';
 
@@ -205,13 +205,13 @@ export class TreeComponent {
     )
   }
 
-  NameFilter() {
-    this.nameFilter = this.Name;
+  CategoryFilter() {
+    this.categoryFilter = this.Category;
   }
 
-  NameFilterClear() {
-    this.nameFilter = '';
-    this.Name = '';
+  CategoryFilterClear() {
+    this.categoryFilter = '';
+    this.Category = '';
   }
 
   SortDirection() {

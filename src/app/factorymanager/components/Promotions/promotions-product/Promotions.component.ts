@@ -6,7 +6,7 @@ import { IPromotions } from 'src/app/factorymanager/models/IPromotions';
   templateUrl: './Promotions.component.html',
   styleUrls: ['./Promotions.component.css']
 })
-export class PromotionsComponent implements OnInit {
+export class PromotionsProductComponent implements OnInit {
   @Input() promotions!: IPromotions
 
   constructor() { }

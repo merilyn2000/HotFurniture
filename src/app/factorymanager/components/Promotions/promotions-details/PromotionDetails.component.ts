@@ -7,9 +7,9 @@ import {NgxGalleryImage} from '@kolkov/ngx-gallery';
 import {NgxGalleryAnimation} from '@kolkov/ngx-gallery';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { ReviewDialogComponentPromotionsComponent } from '../ReviewDialogComponent-Promotions/ReviewDialogComponent-Promotions.component';
+import { ReviewDialogPromotionsComponent } from '../review-dialog-promotions/ReviewDialogComponent-Promotions.component';
 import { Promotions } from 'src/app/factorymanager/models/Promotions';
-import { AddToCartDialogPromotionsComponent } from '../AddToCartDialog-Promotions/AddToCartDialog-Promotions.component';
+import { AddToCartDialogPromotionsComponent } from '../addtocart-dialog-promotions/AddToCartDialog-Promotions.component';
 
 @Component({
   selector: 'app-PromotionDetails',
@@ -35,7 +35,7 @@ export class PromotionDetailsComponent implements OnInit {
   this.route.params.subscribe(
   (params) => {
   this.promotionId = +params['id'];
-  this.compService.getProductForNewPromotions(this.promotionId).subscribe(
+  this.compService.getProductForPromotions(this.promotionId).subscribe(
   (data: Promotions) => {
     this.promotion = data;
     // also the resolver does notwork
@@ -87,7 +87,7 @@ export class PromotionDetailsComponent implements OnInit {
   }
 
   ReviewDialog(): void {
-  let dialogRef = this.dialog.open(ReviewDialogComponentPromotionsComponent ,{
+  let dialogRef = this.dialog.open(ReviewDialogPromotionsComponent ,{
   width: '450px'
   });
 

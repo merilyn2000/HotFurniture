@@ -14,7 +14,8 @@
     "BaseType": "Chroome Steel",
     "BackrestHeight": 68,
     "BackrestWidth": 51,
-    "SittingDepth": 50
+    "SittingDepth": 50,
+    "Category": "Chair"
   },
   {
     "Id": 2,
@@ -23,7 +24,8 @@
     "Image": "kitchenChair_newproducts",
     "Stock": 29,
     "Description": "",
-    "Parameters": ""
+    "Parameters": "",
+    "Category": "Chair"
   },
   {
     "Id": 3,
@@ -32,7 +34,8 @@
     "Image": "coffeTable_newproducts",
     "Stock": 24,
     "Description": "",
-    "Parameters": ""
+    "Parameters": "",
+    "Category": "Table"
   },
   {
     "Id": 4,
@@ -41,7 +44,8 @@
     "Image": "barTable_newproducts",
     "Stock": 23,
     "Description": "",
-    "Parameters": ""
+    "Parameters": "",
+    "Category": "Table"
   },
   {
     "Id": 5,
@@ -50,7 +54,8 @@
     "Image": "doubleBed_newproducts",
     "Stock": 12,
     "Description": "",
-    "Parameters": ""
+    "Parameters": "",
+    "Category": "Bed"
   },
   {
     "Id": 6,
@@ -59,7 +64,8 @@
     "Image": "bedsForOnePerson_newproducts",
     "Stock": 23,
     "Description": "",
-    "Parameters": ""
+    "Parameters": "",
+    "Category": "Bed"
   }
 ]
 

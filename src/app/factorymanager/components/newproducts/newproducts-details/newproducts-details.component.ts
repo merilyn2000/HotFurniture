@@ -6,9 +6,9 @@ import {NgxGalleryOptions} from '@kolkov/ngx-gallery';
 import {NgxGalleryImage} from '@kolkov/ngx-gallery';
 import {NgxGalleryAnimation} from '@kolkov/ngx-gallery';
 import { MatDialog } from '@angular/material/dialog';
-import { ReviewDialogComponent } from '../review-dialog/review-dialog.component';
+import { ReviewDialogNewProductsComponent } from '../review-dialog-newproducts/review-dialog.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { AddtocartDialogComponent } from '../addtocart-dialog/addtocart-dialog.component';
+import { AddtocartDialogNewProductsComponent } from '../addtocart-dialog-newproducts/addtocart-dialog.component';
 
 @Component({
   selector: 'app-newproducts-details',
@@ -85,7 +85,7 @@ export class NewproductsDetailsComponent implements OnInit {
   }
 
   ReviewDialog(): void {
-    let dialogRef = this.dialog.open(ReviewDialogComponent ,{
+    let dialogRef = this.dialog.open(ReviewDialogNewProductsComponent ,{
       width: '450px'
     });
 
@@ -107,7 +107,7 @@ export class NewproductsDetailsComponent implements OnInit {
   }
 
   AddToCartDialog(): void {
-    let dialogRef = this.dialog.open(AddtocartDialogComponent ,{
+    let dialogRef = this.dialog.open(AddtocartDialogNewProductsComponent ,{
       width: '450px'
     });
 

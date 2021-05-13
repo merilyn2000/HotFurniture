@@ -6,9 +6,9 @@ import { MatDialogRef } from '@angular/material/dialog';
   templateUrl: './addtocart-dialog.component.html',
   styleUrls: ['./addtocart-dialog.component.css']
 })
-export class AddtocartDialogComponent implements OnInit {
+export class AddtocartDialogNewProductsComponent implements OnInit {
 
-  constructor(private dialogRef: MatDialogRef<AddtocartDialogComponent>) { }
+  constructor(private dialogRef: MatDialogRef<AddtocartDialogNewProductsComponent>) { }
 
   ngOnInit() {
   }

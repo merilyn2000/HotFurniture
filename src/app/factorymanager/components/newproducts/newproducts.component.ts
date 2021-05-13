@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { INewProducts } from '../../models/INewProducts';
-import { AddtocartDialogComponent } from './addtocart-dialog/addtocart-dialog.component';
+import { AddtocartDialogNewProductsComponent } from './addtocart-dialog-newproducts/addtocart-dialog.component';
 
 @Component({
   selector: 'app-newproducts',
@@ -19,7 +19,7 @@ export class NewproductsComponent implements OnInit {
   }
 
   AddToCartDialog(): void {
-    let dialogRef = this.dialog.open(AddtocartDialogComponent ,{
+    let dialogRef = this.dialog.open(AddtocartDialogNewProductsComponent ,{
       width: '450px'
     });
 

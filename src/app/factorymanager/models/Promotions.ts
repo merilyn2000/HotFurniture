@@ -3,6 +3,7 @@ import { IPromotions } from "./IPromotions";
 export class Promotions implements IPromotions {
   Id!: number;
   Name!: string;
+  Category!: string;
   Price!: number;
   NewPrice!: number;
   Stock!: number;

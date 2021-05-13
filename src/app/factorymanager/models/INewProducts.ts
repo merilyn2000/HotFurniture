@@ -4,4 +4,5 @@ export interface INewProducts {
   Price: number;
   Image?: string;
   Stock: number;
+  Category: string;
 }

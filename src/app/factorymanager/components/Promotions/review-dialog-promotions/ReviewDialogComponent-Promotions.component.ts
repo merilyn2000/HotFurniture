@@ -6,9 +6,9 @@ import { MatDialogRef } from '@angular/material/dialog';
   templateUrl: './ReviewDialogComponent-Promotions.component.html',
   styleUrls: ['./ReviewDialogComponent-Promotions.component.css']
 })
-export class ReviewDialogComponentPromotionsComponent implements OnInit {
+export class ReviewDialogPromotionsComponent implements OnInit {
 
-  constructor(private dialogRef: MatDialogRef<ReviewDialogComponentPromotionsComponent>) { }
+  constructor(private dialogRef: MatDialogRef<ReviewDialogPromotionsComponent>) { }
 
   ngOnInit() {
   }

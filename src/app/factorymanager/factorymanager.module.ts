@@ -10,7 +10,7 @@ import { ChairsComponent } from './components/Chairs/Chairs.component';
 import { TablesComponent } from './components/Tables/Tables.component';
 import { CouchesComponent } from './components/Couches/Couches.component';
 import { CabinetsAndFurnitureComponent } from './components/CabinetsAndFurniture/CabinetsAndFurniture.component';
-import { SeatsComponent } from './components/Seats/Seats.component';
+import { SeatsComponent } from './components/Seats/Seats.component'
 import { StorageSystemsComponent } from './components/StorageSystems/StorageSystems.component';
 import { ComponentService } from './Services/component.service';
 import { NewproductsDetailsComponent } from './components/newproducts/newproducts-details/newproducts-details.component';
@@ -25,14 +25,14 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
 import { UserService } from './Services/user.service';
 import { AlertifyService } from './Services/alertify.service';
 import { AuthService } from './Services/auth.service';
-import { ReviewDialogComponent } from './components/newproducts/review-dialog/review-dialog.component';
-import { PromotionsComponent } from './components/Promotions/PromotionProduct/Promotions.component';
-import { PromotionsListComponent } from './components/Promotions/PromotionsList/PromotionsList.component';
+import { ReviewDialogNewProductsComponent } from './components/newproducts/review-dialog-newproducts/review-dialog.component';
+import { PromotionsProductComponent } from './components/Promotions/promotions-product/Promotions.component';
+import { PromotionsListComponent } from './components/Promotions/promotions-list/PromotionsList.component';
 import { ContactDialogComponent } from './components/toolbar/contact-dialog/contact-dialog.component';
-import { AddtocartDialogComponent } from './components/newproducts/addtocart-dialog/addtocart-dialog.component';
-import { PromotionDetailsComponent } from './components/Promotions/PromotionDetails/PromotionDetails.component';
-import { ReviewDialogComponentPromotionsComponent } from './components/Promotions/ReviewDialogComponent-Promotions/ReviewDialogComponent-Promotions.component';
-import { AddToCartDialogPromotionsComponent } from './components/Promotions/AddToCartDialog-Promotions/AddToCartDialog-Promotions.component';
+import { AddtocartDialogNewProductsComponent } from './components/newproducts/addtocart-dialog-newproducts/addtocart-dialog.component';
+import { PromotionDetailsComponent } from './components/Promotions/promotions-details/PromotionDetails.component';
+import { ReviewDialogPromotionsComponent } from './components/Promotions/review-dialog-promotions/ReviewDialogComponent-Promotions.component';
+import { AddToCartDialogPromotionsComponent } from './components/Promotions/addtocart-dialog-promotions/AddToCartDialog-Promotions.component';
 
 
 const routes: Routes = [
@@ -70,13 +70,13 @@ const routes: Routes = [
     SortPipe,
     UserLoginComponent,
     UserRegisterComponent,
-    ReviewDialogComponent,
-    PromotionsComponent,
+    ReviewDialogNewProductsComponent,
+    PromotionsProductComponent,
     PromotionsListComponent,
     ContactDialogComponent,
-    AddtocartDialogComponent,
+    AddtocartDialogNewProductsComponent,
     PromotionDetailsComponent,
-    ReviewDialogComponentPromotionsComponent,
+    ReviewDialogPromotionsComponent,
     AddToCartDialogPromotionsComponent
   ],
   imports: [

@@ -3,6 +3,7 @@ import { INewProducts } from "./INewProducts";
 export class NewProducts implements INewProducts {
   Id!: number;
   Name!: string;
+  Category!: string;
   Price!: number;
   Stock!: number;
   Image?: string;

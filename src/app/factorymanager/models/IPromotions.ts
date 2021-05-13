@@ -4,5 +4,5 @@ export interface IPromotions {
   Price: number;
   Image?: string;
   Stock: number;
-  NewPrice: number;
+  Category: string;
 }
