@@ -1,0 +1,28 @@
+.example-container {
+  height: 690px;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+mat-icon {
+  font-size: 18px;
+}
+
+label {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+button {
+  margin-right: 3px;
+}

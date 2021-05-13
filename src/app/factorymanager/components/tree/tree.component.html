@@ -1,0 +1,95 @@
+
+
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+      <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
+        <button mat-icon-button disabled></button>
+        {{node.item}}
+        <button mat-icon-button (click)="addNewItem(node)"><mat-icon>add</mat-icon></button>
+        <button mat-icon-button (click)="removeItem(node)"><mat-icon>delete</mat-icon></button>
+      </mat-tree-node>
+
+      <mat-tree-node *matTreeNodeDef="let node; when: hasNoContent" matTreeNodePadding>
+        <button mat-icon-button disabled></button>
+        <button mat-icon-button (click)="removeItem(node)"><mat-icon>delete</mat-icon></button>
+        <mat-form-field>
+          <mat-label>New item...</mat-label>
+          <input matInput #itemValue placeholder="Ex. Lettuce">
+        </mat-form-field>
+        <button mat-button (click)="saveNode(node, itemValue.value)">Save</button>
+      </mat-tree-node>
+
+      <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+        <button mat-icon-button matTreeNodeToggle
+                [attr.aria-label]="'Toggle ' + node.item">
+          <mat-icon class="mat-icon-rtl-mirror">
+            {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+          </mat-icon>
+        </button>
+
+        <span *ngIf="node.item == 'NewProducts'">
+          <button class="btn btn-link-active">{{node.item}}</button>
+        </span>
+        <span *ngIf="node.item == 'Chairs'">
+          <button class="btn btn-link" routerLink="/chairs">{{node.item}}</button>
+        </span>
+        <span *ngIf="node.item == 'Tables'">
+          <button class="btn btn-link" routerLink="/tables">{{node.item}}</button>
+        </span>
+        <span *ngIf="node.item == 'Couches'">
+          <button class="btn btn-link" routerLink="/couches">{{node.item}}</button>
+        </span>
+        <span *ngIf="node.item == 'Beds'">
+          <button class="btn btn-link" routerLink="/beds">{{node.item}}</button>
+        </span>
+        <span *ngIf="node.item == 'Cabinets and Furniture'">
+          <button class="btn btn-link" routerLink="/cabinets-furniture">{{node.item}}</button>
+        </span>
+        <span *ngIf="node.item == 'Seats'">
+          <button class="btn btn-link" routerLink="/seats">{{node.item}}</button>
+        </span>
+        <span *ngIf="node.item == 'StorageSystems'">
+          <button class="btn btn-link" routerLink="/storage-systems">{{node.item}}</button>
+        </span>
+
+        <!-- <button mat-icon-button (click)="addNewItem(node)"><mat-icon>add</mat-icon></button> -->
+        <!-- <button mat-icon-button (click)="removeItem(node)"><mat-icon>delete</mat-icon></button> -->
+      </mat-tree-node>
+    </mat-tree>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="row">
+      <div class="col-sm-8">
+        <label>Name Filter : &nbsp;</label>
+        <input [(ngModel)]='Name'>
+        <button type="button" (click)="NameFilter()"><mat-icon>search</mat-icon> Search</button>
+        <button type="button" (click)="NameFilterClear()"><mat-icon>refresh</mat-icon> Clear</button>
+
+        <label>Sort By : &nbsp;</label>
+        <select style="font-size: 20px;" [(ngModel)]='Sort'>
+        <option value="Price">Price</option>
+        </select>
+        <button type="button" (click) = "SortDirection()">
+          <i *ngIf="sortDirection==='asc'"><mat-icon>arrow_upward</mat-icon></i>
+          <i *ngIf="sortDirection==='desc'"><mat-icon>arrow_downward</mat-icon></i>
+        </button>
+      </div>
+      <div class="col-sm-4 pt-2">
+        <h1 style="height: 15px;">New Products</h1>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div *ngFor="let newProduct of newProducts|filter:nameFilter:'Name'|sort:[Sort, sortDirection]" class="col-sm-4">
+        <div class="shadow-lg p-3">
+          <app-newproducts [newProduct]="newProduct"></app-newproducts>
+        </div>
+      </div>
+    </div>
+
+  </mat-drawer-content>
+</mat-drawer-container>
+

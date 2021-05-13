@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 1,
+    "Name": "Office Chair",
+    "Price": 350,
+    "Image": "officeChair_newproducts",
+    "Stock": 26,
+    "Description": "Scaunul SIB707 se evidențiază prin elementele sale funcționale și estetice. Brațele cu un design original, și tetiera integrată, ce are rolul de a oferi sprijin capului și de a asigura confortul necesar în timpul utilizării, îi acorda o notă futuristă, poziționându-l în categoria scaunelor de birou moderne. În plus, extensia retractabilă, ascunsă sub șezut, permite o relaxare maximă a picioarelor.Scaunul se înclină de la 90 de grade la 135 de grade și se blochează în orice unghi, suplimentar putând glisa suportul pentru picioare pentru a vă relaxa. De asemenea, suportul de brațe, îmbrăcat în spumă de înaltă densitate și acoperit cu piele ecologică, este reglabil.Produsul necesită montaj. Instrucțiunea de montaj și feroneria pentru asamblare se livrează împreună cu produsul.",
+    "Weight": 16,
+    "Size": "70 × 38 × 60 cm",
+    "Color": "Black",
+    "MaximumWeight": 120,
+    "Material": "Ecological Leather",
+    "BaseType": "Chroome Steel",
+    "BackrestHeight": 68,
+    "BackrestWidth": 51,
+    "SittingDepth": 50
+  },
+  {
+    "Id": 2,
+    "Name": "Kitchen Chair",
+    "Price": 200,
+    "Image": "kitchenChair_newproducts",
+    "Stock": 29,
+    "Description": "",
+    "Parameters": ""
+  },
+  {
+    "Id": 3,
+    "Name": "Coffe Table",
+    "Price": 285,
+    "Image": "coffeTable_newproducts",
+    "Stock": 24,
+    "Description": "",
+    "Parameters": ""
+  },
+  {
+    "Id": 4,
+    "Name": "Bar Table",
+    "Price": 365,
+    "Image": "barTable_newproducts",
+    "Stock": 23,
+    "Description": "",
+    "Parameters": ""
+  },
+  {
+    "Id": 5,
+    "Name": "Double Bed",
+    "Price": 750,
+    "Image": "doubleBed_newproducts",
+    "Stock": 12,
+    "Description": "",
+    "Parameters": ""
+  },
+  {
+    "Id": 6,
+    "Name": "Bed For One Person",
+    "Price": 575,
+    "Image": "bedsForOnePerson_newproducts",
+    "Stock": 23,
+    "Description": "",
+    "Parameters": ""
+  }
+]
+
+

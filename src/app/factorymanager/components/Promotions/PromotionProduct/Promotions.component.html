@@ -1,0 +1,29 @@
+<div class="card box">
+  <div class="p-4">
+    <div class="card-img-wrapper" style="border: 1px solid">
+      <img class="card-img-top" src="assets/images/{{promotions.Image}}.png">
+      <ul class="list-inline text-center member-icons animate">
+        <li class="list-inline-item">
+          <button class="btn btn-primary" routerLink="/promotions-details/{{promotions.Id}}">
+            <i class="far fa-edit"> Details</i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body p-2 row">
+        <div class="col-sm-8">
+          <h1>{{promotions.Name}}</h1>
+          <hr>
+          <h2 style="text-decoration: line-through; text-decoration-color: red;">Price : {{promotions.Price}} $</h2>
+          <h2>New Price : {{promotions.NewPrice}} $</h2>
+          <h2>Stock : {{promotions.Stock}}</h2>
+        </div>
+        <div class="col-sm-4 pt-5">
+          <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+            <mat-icon>add_shopping_cart</mat-icon>
+          </button>
+          <h2>Add to cart</h2>
+        </div>
+    </div>
+  </div>
+</div>

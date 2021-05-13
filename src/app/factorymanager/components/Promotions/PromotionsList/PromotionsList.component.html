@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-8">
+    <label>Name Filter : &nbsp;</label>
+    <input [(ngModel)]='Name'>
+    <button type="button" (click)="NameFilter()"><mat-icon>search</mat-icon> Search</button>
+    <button type="button" (click)="NameFilterClear()"><mat-icon>refresh</mat-icon> Clear</button>
+
+    <label>Sort By : &nbsp;</label>
+    <select style="font-size: 20px;" [(ngModel)]='Sort'>
+    <option value="NewPrice">Price</option>
+    </select>
+    <button type="button" (click) = "SortDirection()">
+      <i *ngIf="sortDirection==='asc'"><mat-icon>arrow_upward</mat-icon></i>
+      <i *ngIf="sortDirection==='desc'"><mat-icon>arrow_downward</mat-icon></i>
+    </button>
+  </div>
+  <div class="col-sm-4 pt-2">
+    <h1 style="height: 15px;">Promotions</h1>
+  </div>
+</div>
+
+<hr>
+<div class="row p-3">
+  <div *ngFor="let promotion of promotions|filter:nameFilter:'Name'|sort:[Sort, sortDirection]" class="col-sm-4">
+    <div class="shadow-lg p-3">
+      <app-Promotions [promotions]="promotion"></app-Promotions>
+    </div>
+  </div>
+</div>

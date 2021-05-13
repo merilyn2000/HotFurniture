@@ -1,0 +1,15 @@
+.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.error-block {
+  color: red;
+}
+
+.card-header {
+  background-color: #3F51B5;
+}
+
+h3{
+  color: white;
+}

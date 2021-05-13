@@ -1,0 +1,28 @@
+  <div class="card">
+    <div class="p-4">
+      <div class="card-img-wrapper" style="border: 1px solid">
+        <img class="card-img-top" src="assets/images/{{newProduct.Image}}.png">
+        <ul class="list-inline text-center member-icons animate">
+          <li class="list-inline-item">
+            <button class="btn btn-primary" routerLink="/newproducts-details/{{newProduct.Id}}">
+              <i class="far fa-edit"> Details</i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body p-2 row">
+        <div class="col-sm-7">
+          <h1>{{newProduct.Name}}</h1>
+          <hr>
+          <h2>Price : {{newProduct.Price}} $</h2>
+          <h2>Stock : {{newProduct.Stock}}</h2>
+        </div>
+        <div class="col-sm-5 pt-5">
+          <button (click)="AddToCartDialog()" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+            <mat-icon>add_shopping_cart</mat-icon>
+          </button>
+          <h2>Add to cart</h2>
+        </div>
+    </div>
+    </div>
+  </div>

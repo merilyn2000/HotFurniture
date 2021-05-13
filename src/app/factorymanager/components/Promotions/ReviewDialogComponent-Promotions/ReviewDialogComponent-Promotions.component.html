@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Add a review</h2>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Review</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button (click)="Save()" mat-button color="primary"><mat-icon>done</mat-icon> Add your review</button>
+  <button (click)="Cancel()" mat-button color="primary"><mat-icon>cancel</mat-icon>Cancel</button>
+</div>

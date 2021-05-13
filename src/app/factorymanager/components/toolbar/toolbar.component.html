@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <img style="height: 55px;" src="assets/images/favicon.jpg">
+
+  <button class="btn btn-link" routerLink="/home" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>Home
+  </button>
+  <button class="btn btn-link" (click)="ContactDialog()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon> contact_phone</mat-icon>Contact
+  </button>
+  <button class="btn btn-link" routerLink="/promotions" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>card_giftcard</mat-icon>Promotions
+  </button>
+
+  <span class="example-spacer"></span>
+
+  <button *ngIf="!loggedin()" class="btn btn-link" routerLink="/user-register" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>how_to_reg</mat-icon>Register
+  </button>
+  <button *ngIf="!loggedin()" class="btn btn-link" routerLink="/user-login" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>account_circle</mat-icon>Login
+  </button>
+
+  <button *ngIf="loggedin()"mat-button [matMenuTriggerFor]="menu"><mat-icon>person</mat-icon>Welcome {{loggedinUser}}</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="logout()"><mat-icon>highlight_off</mat-icon> Logout</button>
+    <button mat-menu-item><mat-icon>shopping_cart</mat-icon>Your Cart</button>
+  </mat-menu>
+</mat-toolbar>

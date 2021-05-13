@@ -1,0 +1,91 @@
+<div class="row pad">
+
+  <div class="col-sm-4">
+
+    <div class="card box">
+
+      <div class="card-img-wrapper">
+          <img class="card-img-top" src="assets/images/{{newProduct.Image}}.png">
+      </div>
+      <hr>
+      <div class="card-body">
+        <h1 class="card-title">{{newProduct.Name}}</h1>
+          <h2><mat-icon>stars</mat-icon>There are only {{newProduct.Stock}} products of this kind left </h2>
+          <h2><mat-icon>stars</mat-icon>{{newProduct.Price}} $</h2>
+
+      </div>
+      <div class="card-footer">
+        <div>
+          <button (click)="onBack()" class="btn btn-primary btn-group" ><mat-icon>arrow_left_alt</mat-icon> Back</button>
+          <button class="btn btn-primary btn-group" (click)="AddToCartDialog()"><mat-icon>add_shopping_cart</mat-icon> Add To Cart</button>
+          <button class="btn btn-primary btn-group" (click)="ReviewDialog()"><mat-icon>speaker_notes</mat-icon> Reviews</button>
+
+        </div>
+      </div>
+
+  </div>
+
+</div>
+
+  <div class="col-sm-8">
+    <div class="card box p-3">
+      <mat-tab-group>
+        <mat-tab label="Product Description">
+          <h2>{{newProduct.Description}}</h2>
+        </mat-tab>
+        <mat-tab label="Parameters">
+          <div class="row col-sm-12 pt-5">
+            <div class="col-sm-6">
+              <div>
+                <strong>Material</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.Material}}</h2>
+              </div>
+
+              <div class="pt-3">
+                <strong>Base Type</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.BaseType}}</h2>
+              </div>
+
+              <div class="pt-3">
+                <strong>Backrest Height</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.BackrestHeight}} cm</h2>
+              </div>
+
+              <div class="pt-3">
+                <strong>Backerst Width</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.BackerstWidht}} cm</h2>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div>
+                <strong>Weight</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.Weight}} cm</h2>
+              </div>
+
+              <div class="pt-3">
+                <strong>Size</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.Size}} cm</h2>
+              </div>
+
+              <div class="pt-3">
+                <strong>Color</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.Color}}</h2>
+              </div>
+
+              <div class="pt-3">
+                <strong>Maximum Weight</strong>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.MaximumWeight}} cm</h2>
+              </div>
+            </div>
+          </div>
+
+        </mat-tab>
+        <mat-tab label="Images">
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+
+
+  </div>
+</div>
