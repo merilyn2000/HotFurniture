@@ -5,7 +5,7 @@
     <div class="card box">
 
       <div class="card-img-wrapper">
-          <img class="card-img-top" src="assets/images/{{newProduct.Image}}.png">
+          <img class="card-img-top" src="assets/images/{{newProduct.Image}}.jpg">
       </div>
       <hr>
       <div class="card-body">
@@ -17,7 +17,7 @@
       <div class="card-footer">
         <div>
           <button (click)="onBack()" class="btn btn-primary btn-group" ><mat-icon>arrow_left_alt</mat-icon> Back</button>
-          <button class="btn btn-primary btn-group" (click)="AddToCartDialog()"><mat-icon>add_shopping_cart</mat-icon> Add To Cart</button>
+          <button *ngIf='newProduct' class="btn btn-primary btn-group" (click)="addToCart(newProduct)" (click)="AddToCartDialog()"><mat-icon>add_shopping_cart</mat-icon> Add To Cart</button>
           <button class="btn btn-primary btn-group" (click)="ReviewDialog()"><mat-icon>speaker_notes</mat-icon> Reviews</button>
 
         </div>
@@ -47,19 +47,19 @@
               </div>
 
               <div class="pt-3">
-                <strong>Backrest Height</strong>
+                <strong>Height</strong>
                 <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.BackrestHeight}} cm</h2>
               </div>
 
               <div class="pt-3">
-                <strong>Backerst Width</strong>
+                <strong>Width</strong>
                 <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.BackerstWidht}} cm</h2>
               </div>
             </div>
             <div class="col-sm-6">
               <div>
                 <strong>Weight</strong>
-                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.Weight}} cm</h2>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.Weight}} kg</h2>
               </div>
 
               <div class="pt-3">
@@ -74,14 +74,19 @@
 
               <div class="pt-3">
                 <strong>Maximum Weight</strong>
-                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.MaximumWeight}} cm</h2>
+                <h2 class=" pt-3"><mat-icon>minimize</mat-icon> {{newProduct.MaximumWeight}} kg</h2>
               </div>
             </div>
           </div>
 
         </mat-tab>
         <mat-tab label="Images">
-          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+          <ngx-gallery *ngIf="newProduct.Id==1" [options]="galleryOptions" [images]="galleryImages1" class="ngx-gallery"></ngx-gallery>
+          <ngx-gallery *ngIf="newProduct.Id==2" [options]="galleryOptions" [images]="galleryImages2" class="ngx-gallery"></ngx-gallery>
+          <ngx-gallery *ngIf="newProduct.Id==3" [options]="galleryOptions" [images]="galleryImages3" class="ngx-gallery"></ngx-gallery>
+          <ngx-gallery *ngIf="newProduct.Id==4" [options]="galleryOptions" [images]="galleryImages4" class="ngx-gallery"></ngx-gallery>
+          <ngx-gallery *ngIf="newProduct.Id==5" [options]="galleryOptions" [images]="galleryImages5" class="ngx-gallery"></ngx-gallery>
+          <ngx-gallery *ngIf="newProduct.Id==6" [options]="galleryOptions" [images]="galleryImages6" class="ngx-gallery"></ngx-gallery>
         </mat-tab>
       </mat-tab-group>
     </div>

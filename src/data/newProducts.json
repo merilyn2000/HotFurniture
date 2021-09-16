@@ -14,7 +14,6 @@
     "BaseType": "Chroome Steel",
     "BackrestHeight": 68,
     "BackrestWidth": 51,
-    "SittingDepth": 50,
     "Category": "Chair"
   },
   {
@@ -23,8 +22,15 @@
     "Price": 200,
     "Image": "kitchenChair_newproducts",
     "Stock": 29,
-    "Description": "",
-    "Parameters": "",
+    "Description": "Un scaun clasic pentru bucatarii in stil traditional, Eddy este alegerea perfecta cand vine vorba de functionalitate. Scaunul din lemn bej este construit in totalitate din lemn de ulm asigurand astfel o durabilitate sporita in raport cu nevoile umane. Comfortul este unul optim, atentia fiind mult mai canalizata pe elementului definitoriu care sta la baza si anume, utilitatea.",
+    "Weight": 5,
+    "Size": "47 × 47 × 89 cm",
+    "Color": "Beige",
+    "MaximumWeight": 145,
+    "Material": "Wood",
+    "BaseType": "Elm Wood",
+    "BackrestHeight": 88,
+    "BackrestWidth": 52,
     "Category": "Chair"
   },
   {
@@ -33,8 +39,15 @@
     "Price": 285,
     "Image": "coffeTable_newproducts",
     "Stock": 24,
-    "Description": "",
-    "Parameters": "",
+    "Description": "Masuta cafea face parte din categoria mic mobilier, acest produs se poate integra perfect in locuinta dumneavoastra. Este realizata din cele mai calitative materiale, atent alese . Punem accent pe detalii si suntem foarte exigenti pentru rezultate care sa tinda spre perfectiune.",
+    "Weight": 20,
+    "Size": "90 × 60 × 42 cm",
+    "Color": "Wenge+Stejar Craft",
+    "MaximumWeight": 20,
+    "Material": "16mm melamine chipboard",
+    "BaseType": "Melaminated",
+    "BackrestHeight": 42,
+    "BackrestWidth": 90,
     "Category": "Table"
   },
   {
@@ -43,8 +56,15 @@
     "Price": 365,
     "Image": "barTable_newproducts",
     "Stock": 23,
-    "Description": "",
-    "Parameters": "",
+    "Description": "Masa de bar este realizată din lemn masiv reciclat, ceea ce înseamnă că are caracteristicile unor tipuri diferite de lemn, precum lemnul de tec, de mango, acacia etc. Lemnul reciclat este solid, stabil, durabil și frumos. Semnele de uzură oferă fiecărei piese un aspect unic, iar structura de oțel îmbogățește stilul industrial spectaculos. Fiecare etapă a procesului de fabricație este realizată cu cea mai mare grijă, fie că este vorba de recombinare, lustruire, vopsire sau lăcuire. Este ușor de asamblat.",
+    "Weight": 35.8,
+    "Size": "124.5 × 51 × 112 cm",
+    "Color": "Black+Brown",
+    "MaximumWeight": 25,
+    "Material": "Acacia",
+    "BaseType": "Steel",
+    "BackrestHeight": 55,
+    "BackrestWidth": 120,
     "Category": "Table"
   },
   {
@@ -53,8 +73,15 @@
     "Price": 750,
     "Image": "doubleBed_newproducts",
     "Stock": 12,
-    "Description": "",
-    "Parameters": "",
+    "Description": "Patul e piesa centrala a oricarui dormitor si este, totodata, locul in care iti petreci aproape o treime din viata, asa ca de ce sa nu optezi pentru un plus de eleganta, cu un pat tapitat, asa cum e patul PERCY ? Acest model a devenit o alegere populara atat datorita aspectului spectaculos, cat si a senzatiei de confort sporit. Potrivit in locuintele stilate, patul PERCY va fi un exemplu de eleganta si rafinament care va imbogati decorul dormitorului tau si iti va face somnul mai odihnitor. Cu un design scandinav, acest pat se va integra foarte usor in orice locuinta si cu siguranta va satisface chiar si cele mai exigente preferinte",
+    "Weight": 70,
+    "Size": "160 × 200",
+    "Color": "Light Brown",
+    "MaximumWeight": 160,
+    "Material": "Wood",
+    "BaseType": "Wood",
+    "BackrestHeight": 220,
+    "BackrestWidth": 175,
     "Category": "Bed"
   },
   {
@@ -63,8 +90,15 @@
     "Price": 575,
     "Image": "bedsForOnePerson_newproducts",
     "Stock": 23,
-    "Description": "",
-    "Parameters": "",
+    "Description": "Un pat excelent este un element esential pentru un dormitor superb. Atunci cand alegi un pat, atat confortul, cat si aspectul acestuia sunt elemente importante. De aceea, indiferent daca iti doresti un dormitor confortabil sau elegant, un pat tapitat este alegerea potrivita.",
+    "Weight": 50,
+    "Size": "120 × 170",
+    "Color": "Black",
+    "MaximumWeight": 100,
+    "Material": "Upholsterer's",
+    "BaseType": "Steel",
+    "BackrestHeight": 120,
+    "BackrestWidth": 170,
     "Category": "Bed"
   }
 ]

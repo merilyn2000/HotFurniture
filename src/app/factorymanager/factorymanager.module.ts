@@ -33,6 +33,7 @@ import { AddtocartDialogNewProductsComponent } from './components/newproducts/ad
 import { PromotionDetailsComponent } from './components/Promotions/promotions-details/PromotionDetails.component';
 import { ReviewDialogPromotionsComponent } from './components/Promotions/review-dialog-promotions/ReviewDialogComponent-Promotions.component';
 import { AddToCartDialogPromotionsComponent } from './components/Promotions/addtocart-dialog-promotions/AddToCartDialog-Promotions.component';
+import { CartComponent } from './components/Cart/Cart.component';
 
 
 const routes: Routes = [
@@ -50,7 +51,8 @@ const routes: Routes = [
   {path:'user-login', component: UserLoginComponent},
   {path:'user-register', component: UserRegisterComponent},
   {path:'promotions', component: PromotionsListComponent},
-  {path:'promotions-details/:id', component: PromotionDetailsComponent}
+  {path:'promotions-details/:id', component: PromotionDetailsComponent},
+  {path:'cart', component: CartComponent}
 ];
 
 @NgModule({
@@ -77,7 +79,8 @@ const routes: Routes = [
     AddtocartDialogNewProductsComponent,
     PromotionDetailsComponent,
     ReviewDialogPromotionsComponent,
-    AddToCartDialogPromotionsComponent
+    AddToCartDialogPromotionsComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,
